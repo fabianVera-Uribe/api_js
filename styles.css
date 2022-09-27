@@ -13,6 +13,9 @@ body {
   font-size: 16px;
   font-family: sans-serif;
 }
+img {
+  display: block;
+}
 .titulo {
   font-weight: 400;
   text-align: center;
@@ -21,9 +24,8 @@ body {
   font-weight: 700;
 }
 .contenedor {
-  width: min(90%, 120rem);
+  width: min(90%, 200rem);
   margin: 0 auto;
-  background-color: green;
 }
 
 .card__wrap {
@@ -33,4 +35,32 @@ body {
   gap: 2rem;
   padding: 2rem;
   flex-wrap: wrap;
+}
+
+.card {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 8px;
+  box-shadow: 5px 4px 9px 0px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__imagen {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-image: url(https://storage.googleapis.com/bucket-larnu/media/business/123/images/1JFXCO18.png);
+  background-size: cover;
+  background-position: center center;
+  height: 55%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card__imagen img {
+  width: 10rem;
 }
