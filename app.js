@@ -31,6 +31,10 @@ let fetchLarnu = () => {
         // bgImage.style.backgroundPosition = "center center";
         // bgImage.style.heigth = "55%";
       });
+    })
+    .catch((error) => {
+      let mensaje = error.statusText || "Ocurrió un error";
+      cardWrap.innerHTML = `Error ${error.status}: ${mensaje}`;
     });
 };
 
