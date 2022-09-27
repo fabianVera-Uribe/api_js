@@ -1,0 +1,36 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+.titulo {
+  font-weight: 400;
+  text-align: center;
+}
+.titulo__bold {
+  font-weight: 700;
+}
+.contenedor {
+  width: min(90%, 120rem);
+  margin: 0 auto;
+  background-color: green;
+}
+
+.card__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
