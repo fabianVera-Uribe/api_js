@@ -17,14 +17,19 @@ let fetchLarnu = () => {
         <div class="card__imagen">
           <img class="img-logo" src="${e.icon}" />
         </div>
-        <div>
+        <div class="info">
           <h2 class="card__titulo">${e.name}</h2>
-          <p class="card__quizzes">Total Quizzes: ${e.totalQuizzes}</p>
-          <p class="card__usuarios">Usuarios: ${e.users}</p>
+          <p class="card__info">Total Quizzes: ${e.totalQuizzes}</p>
+          <p class="card__info">Usuarios: ${e.users}</p>
+          <a href="https://larnu.app">Go to LarnU</a>
         </div>
         `;
-        let backImg = document.querySelectorAll(".img-container");
         cardWrap.appendChild(div);
+        // const bgImage = document.querySelector(".card__imagen");
+        // bgImage.style.backgroundImage = `url(${e.background})`;
+        // bgImage.style.backgroundSize = "cover";
+        // bgImage.style.backgroundPosition = "center center";
+        // bgImage.style.heigth = "55%";
       });
     });
 };

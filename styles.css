@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto+Flex:opsz,wght@8..144,300&display=swap");
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -11,14 +12,19 @@ html {
 }
 body {
   font-size: 16px;
-  font-family: sans-serif;
+  line-height: 1.4;
 }
 img {
   display: block;
 }
+a {
+  text-decoration: none;
+}
 .titulo {
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   text-align: center;
+  margin: 4rem 0;
 }
 .titulo__bold {
   font-weight: 700;
@@ -38,15 +44,15 @@ img {
 }
 
 .card {
-  width: 20rem;
-  height: 25rem;
+  width: 24rem;
+  height: 35rem;
   border-radius: 8px;
   box-shadow: 5px 4px 9px 0px rgba(0, 0, 0, 0.2);
 
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
 }
 .card__imagen {
   border-top-left-radius: 8px;
@@ -63,4 +69,27 @@ img {
 }
 .card__imagen img {
   width: 10rem;
+}
+.info {
+  height: 45%;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.8rem;
+  background-color: #f4f6ff;
+}
+.info a {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 1.8rem;
+  display: block;
+}
+.card__titulo {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+.card__info {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
 }
